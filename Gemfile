@@ -2,9 +2,9 @@
 # the following line to use "https"
 source 'http://rubygems.org'
 
-gem "middleman", "~>3.1.6"
+gem "middleman", "3.2"
 gem "slim"
-gem 'middleman-gh-pages'
+gem 'middleman-deploy', '~> 1.0'
 
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
