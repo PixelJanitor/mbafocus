@@ -1,0 +1,12 @@
+/*Base Styles -- Config Variables -- Helpers */
+/* line 2, /Users/bryan/Projects/mbafocus/source/stylesheets/foundation/base.sass */
+body {
+  background: #fff; }
+
+/* line 5, /Users/bryan/Projects/mbafocus/source/stylesheets/foundation/base.sass */
+.container {
+  max-width: 1024px;
+  width: 96%;
+  margin: auto; }
+
+/*Component Styles */
