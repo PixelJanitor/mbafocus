@@ -14,7 +14,10 @@
   </head>
 
   <body class="<%= page_classes %>">
-    <%= partial "partials/app_header" %>
-    <%= yield %>
+    <%= partial "partials/login_header" %>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
+

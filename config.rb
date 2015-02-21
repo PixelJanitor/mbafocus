@@ -10,6 +10,7 @@
 ###
 # Page options, layouts, aliases and proxies
 ###
+page "/login.html", :layout => "signin"
 
 # Per-page layout changes:
 #
@@ -23,6 +24,9 @@
 # with_layout :admin do
 #   page "/admin/*"
 # end
+
+# Pretty URLS
+activate :directory_indexes
 
 # Proxy pages (http://middlemanapp.com/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {

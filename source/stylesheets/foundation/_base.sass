@@ -1,0 +1,54 @@
+// Will be deleted---------------------
+.index
+
+  .signin-container
+    position: absolute
+    top: 50%
+    left: 50%
+    width: 50%
+    height: 50%
+
+    +transform(translateY(-50%) translateX(-50%))
+
+  .well
+    height: 100%
+// --------------------------------------
+
+*
+  +box-sizing(border-box)
+
+body, html
+  height: 100%
+  min-height: 100%
+  background: $lightestGray
+  color: $defaultFontColor
+  font-family: "Avenir Next LT Pro Regular"
+
+.container
+  max-width: 1024px
+  width: 96%
+  margin: auto
+
+.content
+  float: right
+  width: calc(100% - 225px)
+  padding: 20px
+// links
+a
+  display: block
+  text-decoration: none
+  color: $linkColor
+  cursor: pointer
+  z-index: 2
+  +transition(all, $transitionTiming)
+
+  &:hover
+    color: $defaultFontColor
+
+// Lists
+ul, ol
+  margin: 0
+  padding: 0
+
+li
+  list-style-type: none

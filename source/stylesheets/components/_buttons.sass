@@ -1,0 +1,15 @@
+// _buttons.sass
+
+.btn
+  display: block
+  padding: 10px 15px
+  color: $white
+  opacity: .8
+  border: none
+
+  +appearance(none)
+  +backface-visibility(hidden)
+  +transition(all, $transitionTiming)
+
+  &:hover
+    opacity: 1

@@ -1,0 +1,27 @@
+// _sidebar.sass
+
+.nav
+  li
+    padding: 0 0 0 20px
+
+    &.active
+      border-right: 5px solid $primary
+
+      a
+        color: $defaultFontColor
+
+    a
+      padding: 10px 0
+
+    &:last-child
+      margin: 0 0 20px
+
+#sidebar
+  position: fixed
+  left: 0
+  +size(225px 100%)
+  padding: 20px 0
+  border-right: 1px solid $borderColor
+
+#treeview
+  padding: 0 20px
