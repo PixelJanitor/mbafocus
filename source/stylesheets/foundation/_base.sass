@@ -23,6 +23,7 @@ body, html
   background: $lightestGray
   color: $defaultFontColor
   font-family: "Avenir Next LT Pro Regular"
+  line-height: 1.5
 
 .container
   max-width: 1024px
@@ -30,9 +31,15 @@ body, html
   margin: auto
 
 .content
+  position: relative
   float: right
   width: calc(100% - 225px)
   padding: 20px
+
+section
+  background: $white
+  margin: 0 0 $spacing-lg
+
 // links
 a
   display: block
@@ -52,3 +59,7 @@ ul, ol
 
 li
   list-style-type: none
+
+// Icons
+.fa
+  font-size: 26px

@@ -2,10 +2,11 @@
 
 .btn
   display: block
-  padding: 10px 15px
+  padding: 10px 20px
   color: $white
   opacity: .8
   border: none
+  line-height: 1
 
   +appearance(none)
   +backface-visibility(hidden)
@@ -13,3 +14,24 @@
 
   &:hover
     opacity: 1
+
+  &.btn-light
+    background: $white
+    color: $defaultFontColor
+    border: 1px solid $borderColor
+
+    &.active
+      color: $primary
+
+.btn-group
+
+  .btn
+    float: left
+
+    &:first-child
+      border-radius: 20px 0 0 20px
+      border-right: none
+
+    &:last-child
+      border-radius: 0 20px 20px 0
+      border-left: none

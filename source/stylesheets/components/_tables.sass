@@ -1,0 +1,31 @@
+// _tables.sass
+
+table
+  width: 100%
+
+th, td
+  padding: $spacing
+  text-align: left
+
+td
+  position: relative
+  border-top: 1px solid $borderColor
+
+  .fa-star-o, .fa-star
+    position: absolute
+    top: 50%
+    left: 50%
+    +transform(translateY(-50%) translateX(-50%) scale(1))
+    +transition(all, $transitionTiming)
+    +transform-origin(center)
+
+    &.hide
+      +transform(scale(0))
+      z-index: -1
+
+    &.show
+      z-index: 1
+
+
+  .fa-star
+    color: $yellow

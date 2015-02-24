@@ -1,0 +1,56 @@
+// _panels.sass
+
+.panel
+  background: $white
+  border: 1px solid $borderColor
+
+.panel-header, .panel-footer
+  position: relative
+  padding: 20px
+  background: $lightestGray
+  +clearfix
+
+.panel-header
+  border-bottom: 1px solid $borderColor
+
+  .lead-icon
+    position: absolute
+    top: 24px
+    left: 20px
+
+  h2
+    float: left
+    margin: 0 0 0 40px
+
+  &.has-input
+
+    .lead-icon
+      top: 31px
+
+    h2
+      position: relative
+      top: 4px
+
+  .info
+    position: absolute
+    bottom: 6px
+    font-size: 12px
+
+  .search
+    width: 75%
+    float: right
+
+    input
+      float: left
+      width: calc(100% - 90px)
+      border-right: none
+
+    .btn
+      float: right
+      height: 40px
+
+.panel-footer
+  border-top: 1px solid $borderColor
+
+  .right-button
+    float: right
