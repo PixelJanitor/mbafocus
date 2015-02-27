@@ -1,4 +1,8 @@
-//= require_tree .
+//= require jquery-2.1.1.min
+//= require jstree.min
+//= require underscore.min
+//= require moment
+//= require clndr.min
 
 $(function() {
   $("#treeview").jstree({
@@ -20,5 +24,9 @@ $(function() {
     var emptyStar = $(this).prev(".fa-star-o");
     $(this).addClass("hide").removeClass("show");
     emptyStar.removeClass("hide").addClass("show")
+  });
+
+  $('.calendar-container').clndr({
+    template: $('#calendar').html()
   });
 });
