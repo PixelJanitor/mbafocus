@@ -22,5 +22,48 @@
   padding: 20px 0
   border-right: 1px solid $borderColor
 
+  &.wide
+    width: 300px
+    padding: 20px
+
 #treeview
   padding: 0 20px
+
+.filters
+
+  .btn-group
+
+.filter-group
+  margin: 20px 0
+
+  li
+    position: relative
+    padding: 10px
+    margin: 0 0 10px
+    border: 1px solid $borderColor
+
+    .state
+      margin: 0 5px 0 0
+
+  .filter-header
+    position: relative
+    padding: 10px 10px 10px 0
+    margin: 0 0 10px
+    border-bottom: 1px solid $borderColor
+    +clearfix
+
+    h3
+      float: left
+      margin: 0
+      line-height: 1
+
+  .add-new, .remove
+    position: absolute
+    top: 50%
+    right: 10px
+    font-size: 18px
+    +transform(translateY(-50%))
+
+  .remove
+    font-size: 24px
+

@@ -135,7 +135,7 @@
         button.btn.btn-light Today
         button.btn.btn-light.active 7 Days
         button.btn.btn-light 30 Days
-      button.btn.primary-background.right-button View All Jobs
+      a.btn.primary-background.right-button href="job-listings" View All Jobs
   .calendar-container
     script#calendar type="text/template"
       | <div class="clndr-controls">
@@ -143,7 +143,7 @@
       |   <div class="month"><%= month %></div>
       |   <div class="clndr-button next">&rsaquo;</div>
       | </div>
-      | <div class="clndr-grid">
+      | <div class="clndr-grid primary-background">
       |   <div class="days-of-the-week">
       |     <% _.each(daysOfTheWeek, function(day) { %>
       |       <div class="header-day"><%= day %></div>
@@ -155,18 +155,50 @@
       |   </div>
       |   </div>
       | </div>
-      | <div class="clndr-today-button">Today</div>
+      | <div class="event-listing">
+      |   <div class="event-listing-title">EVENTS THIS MONTH</div>
+      |   <% _.each(eventsThisMonth, function(event) { %>
+      |      <div class="event-item">
+      |       <div class="event-item-name"><%= event.name %></div>
+      |       <div class="event-item-location"><%= event.location %></div>
+      |      </div>
+      |   <% }); %>
+      | </div>
   section.reporting
     .panel
       .panel-header
         i.fa.fa-newspaper-o.lead-icon
         h2.bold Employment Reporting
         .info Last Updated: Now
+      .panel-body
+        table
+          thead
+            th Recent Offers
+            th Offer Date
+            th Status
+          tbody
+            tr
+              td.primary-font Offer here
+              td Date here
+              td Status here
+            tr
+              td.primary-font Offer here
+              td Date here
+              td Status here
+      .panel-footer
+        span.status Status: Offer accepted
+        button.btn.primary-background.right-button Update My Employment
   section.messages
     .panel
       .panel-header
         i.fa.fa-newspaper-o.lead-icon
         h2.bold Messages
         .info 3 New Messages
+      .panel-body
+        ul
+          li
+            span.message-title.primary-font Have a great break
+            span.message-date - 03/02/15
+            p Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
 
 

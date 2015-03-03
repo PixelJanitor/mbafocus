@@ -1,10 +1,22 @@
 // _calendar.sass
 
 .calendar-container
+  float: left
   width: 300px
 
+.clndr
+  border: 1px solid $borderColor
+
 .clndr-controls
+  padding: 10px
+
+.clndr-controls
+  background: $white
+  color: $defaultFontColor
   +clearfix
+
+.clndr-grid
+  padding: 30px 10px
 
 .clndr-button, .month
   float: left
@@ -23,3 +35,12 @@
   float: left
   width: 14.28%
   text-align: center
+
+.day
+  height: 40px
+  padding: 9px 5px 5px
+
+.today
+  background: $white
+  color: $primary
+  border-radius: 50%
