@@ -2221,17 +2221,21 @@ body, html {
   position: relative;
   float: right;
   width: calc(100% - 225px);
-  padding: 20px; }
-  /* line 39, /Users/bryan/Projects/mbafocus/source/stylesheets/foundation/_base.sass */
+  padding: 20px;
+  border-left: 1px solid #EAEAEA; }
+  /* line 40, /Users/bryan/Projects/mbafocus/source/stylesheets/foundation/_base.sass */
   .content.wide-sidebar {
-    width: calc(100% - 300px); }
+    width: calc(100% - 300px);
+    padding: 20px 20px 20px 0;
+    background: #FCFCFC;
+    border-left: none; }
 
-/* line 42, /Users/bryan/Projects/mbafocus/source/stylesheets/foundation/_base.sass */
+/* line 46, /Users/bryan/Projects/mbafocus/source/stylesheets/foundation/_base.sass */
 section {
   background: #FFF;
   margin: 0 0 20px; }
 
-/* line 47, /Users/bryan/Projects/mbafocus/source/stylesheets/foundation/_base.sass */
+/* line 51, /Users/bryan/Projects/mbafocus/source/stylesheets/foundation/_base.sass */
 a {
   display: block;
   text-decoration: none;
@@ -2241,20 +2245,20 @@ a {
   -webkit-transition: all, 0.3s;
   -moz-transition: all, 0.3s;
   transition: all, 0.3s; }
-  /* line 55, /Users/bryan/Projects/mbafocus/source/stylesheets/foundation/_base.sass */
+  /* line 59, /Users/bryan/Projects/mbafocus/source/stylesheets/foundation/_base.sass */
   a:hover {
     color: #5F5F5F; }
 
-/* line 59, /Users/bryan/Projects/mbafocus/source/stylesheets/foundation/_base.sass */
+/* line 63, /Users/bryan/Projects/mbafocus/source/stylesheets/foundation/_base.sass */
 ul, ol {
   margin: 0;
   padding: 0; }
 
-/* line 63, /Users/bryan/Projects/mbafocus/source/stylesheets/foundation/_base.sass */
+/* line 67, /Users/bryan/Projects/mbafocus/source/stylesheets/foundation/_base.sass */
 li {
   list-style-type: none; }
 
-/* line 67, /Users/bryan/Projects/mbafocus/source/stylesheets/foundation/_base.sass */
+/* line 71, /Users/bryan/Projects/mbafocus/source/stylesheets/foundation/_base.sass */
 .fa {
   font-size: 26px; }
 
@@ -2286,7 +2290,7 @@ li {
 /* line 3, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_buttons.sass */
 .btn {
   display: block;
-  padding: 10px 20px;
+  padding: 12px 20px 9px 20px;
   color: #FFF;
   opacity: 0.8;
   border: none;
@@ -2323,25 +2327,28 @@ li {
     background: transparent;
     color: #5F5F5F;
     border: 1px solid #5F5F5F; }
+  /* line 37, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_buttons.sass */
+  .btn.right-button {
+    float: right; }
 
 /* line 20, /Users/bryan/Projects/mbafocus/source/stylesheets/bourbon/addons/_clearfix.scss */
 .btn-group::after {
   clear: both;
   content: "";
   display: table; }
-/* line 42, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_buttons.sass */
+/* line 45, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_buttons.sass */
 .btn-group.two-btns .btn {
   width: 50%; }
-/* line 45, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_buttons.sass */
+/* line 48, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_buttons.sass */
 .btn-group .btn {
   float: left;
   border-left: none;
   border-right: none; }
-  /* line 50, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_buttons.sass */
+  /* line 53, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_buttons.sass */
   .btn-group .btn:first-child {
     border-radius: 20px 0 0 20px;
     border: 1px solid #EAEAEA; }
-  /* line 54, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_buttons.sass */
+  /* line 57, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_buttons.sass */
   .btn-group .btn:last-child {
     border-radius: 0 20px 20px 0;
     border: 1px solid #EAEAEA; }
@@ -2351,13 +2358,13 @@ li {
   clear: both;
   content: "";
   display: table; }
-/* line 61, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_buttons.sass */
+/* line 64, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_buttons.sass */
 .btn-has-label .btn-label {
   position: relative;
   top: 8px;
   margin: 0 10px 0 0; }
-/* line 66, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_buttons.sass */
-.btn-has-label.right-buuton {
+/* line 69, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_buttons.sass */
+.btn-has-label.right-button {
   float: right; }
 
 /* line 3, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_calendar.sass */
@@ -2426,7 +2433,7 @@ li {
 /* line 3, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_forms.sass */
 input {
   display: block;
-  padding: 10px;
+  padding: 12px 10px 8px 10px;
   border: 1px solid #EAEAEA;
   -webkit-transition: all, 0.3s;
   -moz-transition: all, 0.3s;
@@ -2487,8 +2494,25 @@ header {
 .panel {
   background: #FFF;
   border: 1px solid #EAEAEA; }
+  /* line 7, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_panels.sass */
+  .panel li {
+    padding: 20px; }
+    /* line 10, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_panels.sass */
+    .panel li h2 {
+      margin: 0;
+      padding: 0 0 5px 0;
+      border-bottom: 1px solid #EAEAEA; }
+    /* line 15, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_panels.sass */
+    .panel li p {
+      margin: 10px 0 0; }
+    /* line 18, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_panels.sass */
+    .panel li .label {
+      margin: 0 10px 0 0; }
+    /* line 21, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_panels.sass */
+    .panel li .summary-item {
+      margin: 0 0 5px 0; }
 
-/* line 7, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_panels.sass */
+/* line 24, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_panels.sass */
 .panel-header, .panel-footer {
   position: relative;
   padding: 20px;
@@ -2499,53 +2523,63 @@ header {
     content: "";
     display: table; }
 
-/* line 13, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_panels.sass */
+/* line 30, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_panels.sass */
 .panel-header {
   border-bottom: 1px solid #EAEAEA; }
-  /* line 16, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_panels.sass */
+  /* line 33, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_panels.sass */
+  .panel-header .job-title {
+    margin: 0; }
+  /* line 36, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_panels.sass */
+  .panel-header .actions {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  /* line 42, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_panels.sass */
   .panel-header .lead-icon {
     position: absolute;
     top: 24px;
     left: 20px; }
-  /* line 21, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_panels.sass */
+  /* line 47, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_panels.sass */
   .panel-header h2 {
     float: left;
     margin: 0 0 0 40px; }
-  /* line 27, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_panels.sass */
+  /* line 53, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_panels.sass */
   .panel-header.has-input .lead-icon {
     top: 31px; }
-  /* line 30, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_panels.sass */
+  /* line 56, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_panels.sass */
   .panel-header.has-input h2 {
     position: relative;
     top: 4px; }
-  /* line 34, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_panels.sass */
+  /* line 60, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_panels.sass */
   .panel-header .info {
     position: absolute;
     bottom: 6px;
     font-size: 12px; }
-  /* line 39, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_panels.sass */
+  /* line 65, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_panels.sass */
   .panel-header .search {
     width: 75%;
     float: right; }
-    /* line 43, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_panels.sass */
+    /* line 69, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_panels.sass */
     .panel-header .search input {
       float: left;
       width: calc(100% - 90px);
       border-right: none; }
-    /* line 48, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_panels.sass */
+    /* line 74, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_panels.sass */
     .panel-header .search .btn {
       float: right;
-      height: 40px; }
+      height: 41px; }
 
-/* line 52, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_panels.sass */
+/* line 78, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_panels.sass */
 .panel-footer {
   border-top: 1px solid #EAEAEA; }
-  /* line 55, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_panels.sass */
+  /* line 81, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_panels.sass */
   .panel-footer .btn-group {
     float: left; }
-  /* line 58, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_panels.sass */
-  .panel-footer .right-button {
-    float: right; }
 
 /* line 4, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_sidebar.sass */
 .nav li {
@@ -2568,12 +2602,12 @@ header {
   float: left;
   height: 100%;
   width: 225px;
-  padding: 20px 0;
-  border-right: 1px solid #EAEAEA; }
-  /* line 25, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_sidebar.sass */
+  padding: 20px 0; }
+  /* line 24, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_sidebar.sass */
   #sidebar.wide {
     width: 300px;
-    padding: 20px; }
+    padding: 20px;
+    background: #FCFCFC; }
 
 /* line 29, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_sidebar.sass */
 #treeview {
@@ -2621,6 +2655,11 @@ header {
   /* line 67, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_sidebar.sass */
   .filter-group .remove {
     font-size: 24px; }
+
+/* line 72, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_sidebar.sass */
+.job-info .label + a {
+  display: inline-block;
+  margin: 0 0 0 5px; }
 
 /* line 3, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_tables.sass */
 table {
@@ -2702,7 +2741,7 @@ td {
 
 /* line 3, /Users/bryan/Projects/mbafocus/source/stylesheets/pages/_dashboard.sass */
 .hero-container {
-  margin: -20px;
+  margin: -21px;
   padding: 20px 20px 40px;
   background-size: cover;
   background-repeat: no-repeat; }
