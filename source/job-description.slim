@@ -1,14 +1,19 @@
 #sidebar.wide.filters
   a.btn.primary-light href="job-listings" Back to jobs
-  .filter-group
+  .job-info
     .filter-header
       h3 Job Contact Information
     ul
       li
-        span.label Name:
-        span.label Title:
-        span.label Email:
-        span.label Phone:
+        span.label Name: Harry Potter
+      li
+        span.label Title: The boy who lived
+      li
+        span.label
+          | Email:
+        a.email.primary-font href="mailto:" always@potter.com
+      li
+        span.label Phone: 123-456-7890
   .filter-group
     .filter-header
       h3 Filter Header
@@ -38,3 +43,47 @@
       input type="checkbox"
       label Include OCR
 .content.wide-sidebar
+  .panel
+    .panel-header
+      h1.job-title Professor of Something
+      span.sub-title Hogwart's School of Magic
+      a.actions Actions
+    .panel-body
+      ul
+        li
+          h2 Job Description
+          p Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus.
+        li
+          h2 Qualifications
+          p Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus.
+        li
+          h2 Organization Information
+          p Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus.
+        li
+          .summary-item
+            span.label.bold Title:
+            span.info Some title goes here
+          .summary-item
+            span.label.bold Type:
+            span.info Contract
+          .summary-item
+            span.label.bold Audience:
+            span.info Full-Time, Intern
+          .summary-item
+            span.label.bold Work Authorization:
+            span.info US Only
+          .summary-item
+            span.label.bold Job Number:
+            span.info 12345678900987
+          .summary-item
+            span.label.bold Job City:
+            span.info Hogsmeade Village
+          .summary-item
+            span.label.bold Region:
+            span.info Europe
+          .summary-item
+            span.label.bold Industry:
+            span.info Education
+          .summary-item
+            span.label.bold Function:
+            span.info Education

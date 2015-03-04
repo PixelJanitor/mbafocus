@@ -34,10 +34,14 @@ body, html
   position: relative
   float: right
   width: calc(100% - 225px)
-  padding: 20px
+  padding: $spacing-lg
+  border-left: 1px solid $borderColor
 
   &.wide-sidebar
     width: calc(100% - 300px)
+    padding: $spacing-lg $spacing-lg $spacing-lg 0
+    background: $lightestGray
+    border-left: none
 
 section
   background: $white

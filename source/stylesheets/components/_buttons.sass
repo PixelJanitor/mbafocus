@@ -2,7 +2,7 @@
 
 .btn
   display: block
-  padding: 10px 20px
+  padding: $spacing + 2 $spacing-lg $spacing - 1 $spacing-lg
   color: $white
   opacity: .8
   border: none
@@ -34,6 +34,9 @@
     color: $defaultFontColor
     border: 1px solid $defaultFontColor
 
+  &.right-button
+    float: right
+
 .btn-group
   +clearfix
 
@@ -63,5 +66,5 @@
     top: 8px
     margin: 0 10px 0 0
 
-  &.right-buuton
+  &.right-button
     float: right

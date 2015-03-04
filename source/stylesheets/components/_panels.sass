@@ -4,23 +4,49 @@
   background: $white
   border: 1px solid $borderColor
 
+  li
+    padding: $spacing-lg
+
+    h2
+      margin: 0
+      padding: 0 0 5px 0
+      border-bottom: 1px solid $borderColor
+
+    p
+      margin: $spacing 0 0
+
+    .label
+      margin: 0 $spacing 0 0
+
+    .summary-item
+      margin: 0 0 5px 0
+
 .panel-header, .panel-footer
   position: relative
-  padding: 20px
+  padding: $spacing-lg
   background: $lightestGray
   +clearfix
 
 .panel-header
   border-bottom: 1px solid $borderColor
 
+  .job-title
+    margin: 0
+
+  .actions
+    position: absolute
+    top: 50%
+    right: $spacing-lg
+    +transform(translateY(-50%))
+
   .lead-icon
     position: absolute
     top: 24px
-    left: 20px
+    left: $spacing-lg
 
   h2
     float: left
-    margin: 0 0 0 40px
+    margin: 0 0 0 $spacing-lg * 2
 
   &.has-input
 
@@ -47,13 +73,10 @@
 
     .btn
       float: right
-      height: 40px
+      height: $spacing-lg * 2 + 1
 
 .panel-footer
   border-top: 1px solid $borderColor
 
   .btn-group
     float: left
-
-  .right-button
-    float: right
