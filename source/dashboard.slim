@@ -135,13 +135,13 @@
         button.btn.btn-light Today
         button.btn.btn-light.active 7 Days
         button.btn.btn-light 30 Days
-      a.btn.primary-background.right-button href="job-listings" View All Jobs
+      a.btn.primary-background.right-button href="/job-listings" View All Jobs
   .calendar-container
     script#calendar type="text/template"
       | <div class="clndr-controls">
-      |   <div class="clndr-button previous">&lsaquo;</div>
+      |   <div class="clndr-previous-button">&lsaquo;</div>
       |   <div class="month"><%= month %></div>
-      |   <div class="clndr-button next">&rsaquo;</div>
+      |   <div class="clndr-next-button">&rsaquo;</div>
       | </div>
       | <div class="clndr-grid primary-background">
       |   <div class="days-of-the-week">
@@ -156,11 +156,14 @@
       |   </div>
       | </div>
       | <div class="event-listing">
-      |   <div class="event-listing-title">EVENTS THIS MONTH</div>
+      |   <div class="event-listing-title text-center">Upcoming Events</div>
       |   <% _.each(eventsThisMonth, function(event) { %>
       |      <div class="event-item">
-      |       <div class="event-item-name"><%= event.name %></div>
-      |       <div class="event-item-location"><%= event.location %></div>
+      |       <div class="event-details">
+      |         <span class="event-item-name"><%= event.name %></span>
+      |         <span class="event-item-date"><%= event.date %></span>
+      |       </div>
+      |       <div class="event-item-location">At: <%= event.location %></div>
       |      </div>
       |   <% }); %>
       | </div>
@@ -197,7 +200,15 @@
       .panel-body
         ul
           li
-            span.message-title.primary-font Have a great break
+            span.message-title.primary-font.bold Have a great break
+            span.message-date - 03/02/15
+            p Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+          li
+            span.message-title.primary-font.bold Have a great break
+            span.message-date - 03/02/15
+            p Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+          li
+            span.message-title.primary-font.bold Have a great break
             span.message-date - 03/02/15
             p Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
 
