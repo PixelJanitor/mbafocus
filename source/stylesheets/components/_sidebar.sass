@@ -17,6 +17,7 @@
       margin: 0 0 20px
 
 #sidebar
+  position: relative
   float: left
   +size(225px 100%)
   padding: 20px 0
@@ -25,6 +26,17 @@
     width: 300px
     padding: 20px
     background: $lightestGray
+
+  .menu-toggle
+    display: none
+    position: absolute
+    top: 0
+    right: 0
+    padding: $spacing
+    background: rgba($lightestGray, .97)
+    z-index: 9999
+    cursor: pointer
+    +transform(translateX(100%))
 
 #treeview
   padding: 0 20px
@@ -72,3 +84,20 @@
   .label + a
     display: inline-block
     margin: 0 0 0 5px
+
+@media screen and (max-width: 1024px)
+
+  #sidebar
+    position: absolute
+    top: 67px
+    left: -225px
+    z-index: 9999
+    background: rgba($lightestGray, .97)
+    +transition(all, $transitionTiming)
+
+    &.show-nav
+      left: 0
+      width: 50%
+
+    .menu-toggle
+      display: block

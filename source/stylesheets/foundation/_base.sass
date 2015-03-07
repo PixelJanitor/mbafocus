@@ -36,6 +36,10 @@ body, html
   width: calc(100% - 225px)
   padding: $spacing-lg
   border-left: 1px solid $borderColor
+  +transition(all, $transitionTiming)
+
+  @media screen and (max-width: 1024px)
+    width: calc(100% - 42px)
 
   &.wide-sidebar
     width: calc(100% - 300px)

@@ -26,6 +26,13 @@ $(function() {
     emptyStar.removeClass("hide").addClass("show")
   });
 
+  $(document).on("click", ".menu-toggle", function() {
+    var sidebar = $("#sidebar");
+    var content = $(".content");
+    sidebar.toggleClass("show-nav");
+    content.toggleClass("show-nav")
+  });
+
   var calendar = $('.calendar-container').clndr({
     template: $('#calendar').html(),
     clickEvents: {
