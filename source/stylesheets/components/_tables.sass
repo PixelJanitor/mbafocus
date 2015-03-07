@@ -7,9 +7,13 @@ th, td
   padding: $spacing
   text-align: left
 
+th
+  font-family: "Avenir Next LT Pro Bold"
+
 td
   position: relative
   border-top: 1px solid $borderColor
+  +clearfix
 
   .fa-star-o, .fa-star
     position: absolute
@@ -29,3 +33,47 @@ td
 
   .fa-star
     color: $yellow
+
+@media screen and (max-width: 1200px)
+
+  table, tr
+    background: $borderColor
+
+  table, thead, tbody, th, td, tr
+    display: block
+
+  thead, tbody, th, td
+    background: $white
+
+  thead tr
+    position: absolute
+    top: -9999px
+    left: -9999px
+
+  tr
+    padding: 0 0 $spacing-xl
+
+    &:last-child
+      padding: 0
+
+  td
+    padding: $spacing $spacing-lg
+
+  td .fa-star-o, td .fa-star
+    right: 20px
+    left: auto
+    +transform(translateY(-50%) translateX(0))
+
+  td:before
+    float: left
+    font-family: "Avenir Next LT Pro Bold"
+
+  td:before
+    content: attr(data-title)
+
+
+  .td-content
+    float: right
+    // position: absolute
+    // top: 50%
+    // right: 15px

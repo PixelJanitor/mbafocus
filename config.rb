@@ -26,7 +26,7 @@ page "/login.html", :layout => "signin"
 # end
 
 # Pretty URLS
-# activate :directory_indexes
+activate :directory_indexes
 
 # Proxy pages (http://middlemanapp.com/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
