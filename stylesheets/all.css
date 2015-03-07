@@ -2727,10 +2727,19 @@ th, td {
   text-align: left; }
 
 /* line 10, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_tables.sass */
+th {
+  font-family: "Avenir Next LT Pro Bold"; }
+
+/* line 13, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_tables.sass */
 td {
   position: relative;
   border-top: 1px solid #EAEAEA; }
-  /* line 14, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_tables.sass */
+  /* line 20, /Users/bryan/Projects/mbafocus/source/stylesheets/bourbon/addons/_clearfix.scss */
+  td::after {
+    clear: both;
+    content: "";
+    display: table; }
+  /* line 18, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_tables.sass */
   td .fa-star-o, td .fa-star {
     position: absolute;
     top: 50%;
@@ -2748,7 +2757,7 @@ td {
     -ms-transform-origin: center;
     -o-transform-origin: center;
     transform-origin: center; }
-    /* line 22, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_tables.sass */
+    /* line 26, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_tables.sass */
     td .fa-star-o.hide, td .fa-star.hide {
       -webkit-transform: scale(0);
       -moz-transform: scale(0);
@@ -2756,13 +2765,65 @@ td {
       -o-transform: scale(0);
       transform: scale(0);
       z-index: -1; }
-    /* line 26, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_tables.sass */
+    /* line 30, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_tables.sass */
     td .fa-star-o.show, td .fa-star.show {
       z-index: 1; }
-  /* line 30, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_tables.sass */
+  /* line 34, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_tables.sass */
   td .fa-star {
     color: #FBD724; }
 
+@media screen and (max-width: 1200px) {
+  /* line 39, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_tables.sass */
+  table, tr {
+    background: #EAEAEA; }
+
+  /* line 42, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_tables.sass */
+  table, thead, tbody, th, td, tr {
+    display: block; }
+
+  /* line 45, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_tables.sass */
+  thead, tbody, th, td {
+    background: #FFF; }
+
+  /* line 48, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_tables.sass */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px; }
+
+  /* line 53, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_tables.sass */
+  tr {
+    padding: 0 0 40px; }
+    /* line 56, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_tables.sass */
+    tr:last-child {
+      padding: 0; }
+
+  /* line 59, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_tables.sass */
+  td {
+    padding: 10px 20px; }
+
+  /* line 62, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_tables.sass */
+  td .fa-star-o, td .fa-star {
+    right: 20px;
+    left: auto;
+    -webkit-transform: translateY(-50%) translateX(0);
+    -moz-transform: translateY(-50%) translateX(0);
+    -ms-transform: translateY(-50%) translateX(0);
+    -o-transform: translateY(-50%) translateX(0);
+    transform: translateY(-50%) translateX(0); }
+
+  /* line 67, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_tables.sass */
+  td:before {
+    float: left;
+    font-family: "Avenir Next LT Pro Bold"; }
+
+  /* line 71, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_tables.sass */
+  td:before {
+    content: attr(data-title); }
+
+  /* line 75, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_tables.sass */
+  .td-content {
+    float: right; } }
 /* line 3, /Users/bryan/Projects/mbafocus/source/stylesheets/components/_wells.sass */
 .well {
   padding: 40px;
