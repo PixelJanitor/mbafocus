@@ -52,6 +52,13 @@ body, html
     background: $lightestGray
     border-left: none
 
+    @media screen and (max-width: 1024px)
+      width: calc(100% - 42px)
+
+    @media screen and (max-width: 550px)
+      padding: 0
+      border-left: 1px solid $borderColor
+
 section
   background: $white
   margin: 0 0 $spacing-lg
@@ -68,7 +75,7 @@ a
   &:hover
     color: $defaultFontColor
 
-  &.btn
+  &.btn.primary-background
     &:hover
       color: white
 

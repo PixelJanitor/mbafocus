@@ -32,6 +32,7 @@
     position: absolute
     top: 0
     right: 0
+    height: 100%
     padding: $spacing
     background: rgba($lightestGray, .97)
     z-index: 9999
@@ -94,6 +95,13 @@
     z-index: 9999
     background: rgba($lightestGray, .97)
     +transition(all, $transitionTiming)
+
+    &.wide
+      left: -300px
+
+      &.show-nav
+        left: 0
+        width: 75%
 
     &.show-nav
       left: 0
