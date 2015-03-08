@@ -51,7 +51,7 @@
   &.has-input
 
     .lead-icon
-      top: 31px
+      top: 28px
 
     h2
       position: relative
@@ -87,3 +87,26 @@
 
     .search
       width: 50%
+
+@media screen and (max-width: 800px)
+
+  .panel-header
+    &.has-input
+      h2
+        float: none
+        margin-bottom: 10px
+
+      .search
+        width: 100%
+
+  .panel-footer
+    .btn-group
+      float: none
+      width: 100%
+      margin: 0 0 10px
+
+@media screen and (max-width: 550px)
+
+  .panel
+    border-right: none
+    border-left: none

@@ -54,6 +54,7 @@ $(function() {
       // fired when a user goes to the current month/year. returns a moment.js object set to the correct month.
       today: function(month){ }
     },
+    adjacentDaysChangeMonth: true,
     events: [
       { date: moment("2015-03-03").format("MM-DD-YY"),
         name: "Coaching",

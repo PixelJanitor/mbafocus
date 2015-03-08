@@ -53,6 +53,9 @@
     +size(4px)
     +transform(translateX(-50%))
 
+  &.adjacent-month
+    opacity: .6
+
 .today
   background: $white
   color: $primary
@@ -78,6 +81,9 @@
   padding: $spacing
   border-bottom: 1px solid $borderColor
 
+  &:last-child
+    border: none
+
   .event-item-name
     float: left
 
@@ -86,3 +92,53 @@
 
   .event-item-date
     float: right
+
+@media screen and (max-width: 1024px)
+
+  .calendar-container
+    float: none
+    width: 100%
+    margin: 0 0 $spacing-lg
+    +clearfix
+
+  .clndr
+    min-height: 330px
+    max-height: 370px
+    height: auto
+    overflow: scroll
+    +clearfix
+
+  .calendar
+    float: left
+    width: 300px
+
+  .event-listing
+    float: left
+    width: calc(100% - 300px)
+    +clearfix
+
+  .event-item
+
+    &:last-child
+      border-bottom: 1px solid $borderColor
+
+@media screen and (max-width: 700px)
+
+  .calendar-container
+    width: 300px
+    margin: 0 auto 20px
+
+  .calendar, .event-listing
+    float: none
+
+  .event-listing
+    width: 100%
+
+  .event-item
+
+    &:last-child
+      border-bottom: none
+
+  .clndr
+    min-height: initial
+    max-height: initial

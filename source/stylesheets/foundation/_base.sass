@@ -17,6 +17,8 @@
 *
   +box-sizing(border-box)
 
+  @media screen and (max-width: 500px)
+
 body, html
   height: 100%
   min-height: 100%
@@ -41,6 +43,9 @@ body, html
   @media screen and (max-width: 1024px)
     width: calc(100% - 42px)
 
+  @media screen and (max-width: 550px)
+    padding: 0
+
   &.wide-sidebar
     width: calc(100% - 300px)
     padding: $spacing-lg $spacing-lg $spacing-lg 0
@@ -62,6 +67,10 @@ a
 
   &:hover
     color: $defaultFontColor
+
+  &.btn
+    &:hover
+      color: white
 
 // Lists
 ul, ol

@@ -6,6 +6,7 @@
   background-size: cover
   background-repeat: no-repeat
 
+
 .announcements
   padding: $spacing-lg
   background: $white
@@ -38,3 +39,24 @@
     p
       margin: 5px 0 0
       opacity: .8
+
+@media screen and (max-width: 1024px)
+
+  .reporting, .messages
+    float: none
+    width: 100%
+
+@media screen and (max-width: 600px)
+
+  .hero-container
+    padding: 0
+    margin: 0
+
+@media screen and (max-width: 550px)
+
+  .announcements i
+    top: 19px
+    left: 20px
+
+  .reporting
+    margin: 0 0 40px
