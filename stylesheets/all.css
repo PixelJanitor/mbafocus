@@ -3059,14 +3059,17 @@ td {
   -ms-transform: translateY(-50%) translateX(-50%);
   -o-transform: translateY(-50%) translateX(-50%);
   transform: translateY(-50%) translateX(-50%); }
-/* line 17, /Users/bryan/Projects/mbafocus/source/stylesheets/pages/_login.sass */
+  /* line 16, /Users/bryan/Projects/mbafocus/source/stylesheets/pages/_login.sass */
+  .login .signin-container h3 {
+    margin-top: 0; }
+/* line 19, /Users/bryan/Projects/mbafocus/source/stylesheets/pages/_login.sass */
 .login input, .login .btn {
   width: 50%;
   margin: auto; }
-/* line 21, /Users/bryan/Projects/mbafocus/source/stylesheets/pages/_login.sass */
+/* line 23, /Users/bryan/Projects/mbafocus/source/stylesheets/pages/_login.sass */
 .login .password, .login .btn {
   margin-top: -1px; }
-/* line 24, /Users/bryan/Projects/mbafocus/source/stylesheets/pages/_login.sass */
+/* line 26, /Users/bryan/Projects/mbafocus/source/stylesheets/pages/_login.sass */
 .login .copyright {
   color: #BABABA; }
 
