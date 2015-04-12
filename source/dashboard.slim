@@ -33,7 +33,8 @@
     .panel
       .panel-header.has-input
         i.fa.fa-newspaper-o.lead-icon
-        h2.bold Job Listings
+        a href="/job-listings"
+          h2.bold Job Listings
         .search
           input type="text" placeholder="Search"
           button.btn.primary-background Search
@@ -46,6 +47,7 @@
             th Deadline
             th Location
             th Industry
+            th Actions
         tbody
           tr
             td.favorite data-title="Favorite"
@@ -53,10 +55,11 @@
                 i.fa.fa-star-o
                 i.fa.fa-star.hide
             td.title data-title="Title"
-              span.td-content
-                span.primary-font.bold Program Manager
-                .company
-                  | Business Talent Group LLC
+              a href="/job-description"
+                span.td-content
+                  span.accent-font.bold Program Manager
+                  .company
+                    | Business Talent Group LLC
             td.deadline data-title="Deadline"
               span.td-content
                 .date.bold 02/23/2015
@@ -69,6 +72,9 @@
               span.td-content
                 .industry.bold Technology Conputer/Software
                 span.info
+            td data-title="Actions"
+              span.td-content
+                input type="checkbox"
           tr
             td.favorite data-title="Favorite"
               span.td-content
@@ -76,7 +82,7 @@
                 i.fa.fa-star.hide
             td.title data-title="Title"
               span.td-content
-                span.primary-font.bold Program Manager
+                span.accent-font.bold Program Manager
                 .company
                   | Business Talent Group LLC
             td.deadline data-title="Deadline"
@@ -91,6 +97,9 @@
               span.td-content
                 .industry.bold Technology Conputer/Software
                 span.info
+            td data-title="Actions"
+              span.td-content
+                input type="checkbox"
           tr
             td.favorite data-title="Favorite"
               span.td-content
@@ -98,7 +107,7 @@
                 i.fa.fa-star.hide
             td.title data-title="Title"
               span.td-content
-                span.primary-font.bold Program Manager
+                span.accent-font.bold Program Manager
                 .company
                   | Business Talent Group LLC
             td.deadline data-title="Deadline"
@@ -113,6 +122,9 @@
               span.td-content
                 .industry.bold Technology Conputer/Software
                 span.info
+            td data-title="Actions"
+              span.td-content
+                input type="checkbox"
           tr
             td.favorite data-title="Favorite"
               span.td-content
@@ -120,7 +132,7 @@
                 i.fa.fa-star.hide
             td.title data-title="Title"
               span.td-content
-                span.primary-font.bold Program Manager
+                span.accent-font.bold Program Manager
                 .company
                   | Business Talent Group LLC
             td.deadline data-title="Deadline"
@@ -135,6 +147,9 @@
               span.td-content
                 .industry.bold Technology Conputer/Software
                 span.info
+            td data-title="Actions"
+              span.td-content
+                input type="checkbox"
           tr
             td.favorite data-title="Favorite"
               span.td-content
@@ -142,7 +157,7 @@
                 i.fa.fa-star.hide
             td.title data-title="Title"
               span.td-content
-                span.primary-font.bold Program Manager
+                span.accent-font.bold Program Manager
                 .company
                   | Business Talent Group LLC
             td.deadline data-title="Deadline"
@@ -157,6 +172,9 @@
               span.td-content
                 .industry.bold Technology Conputer/Software
                 span.info
+            td data-title="Actions"
+              span.td-content
+                input type="checkbox"
       .panel-footer
         .btn-group.rounded
           button.btn.btn-light Today
@@ -210,11 +228,11 @@
             th Status
           tbody
             tr
-              td.primary-font Offer here
+              td.accent-font Offer here
               td Date here
               td Status here
             tr
-              td.primary-font Offer here
+              td.accent-font Offer here
               td Date here
               td Status here
       .panel-footer
